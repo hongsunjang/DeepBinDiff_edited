@@ -18,6 +18,8 @@ Edited
 3. mkdir data
 4. mkdir data/DeepBD
 6. src/deepwalk/skimgram.py in line'from gensim.models.word2vec import Vocab'removal
-7. src/libnrl/gcn/layers.py in line 4  -> tensorflow.compat.v1 added
-8. src/libnrl/gcn/gcnAPI.py -> tensorflow.compat.v1 added
-9. src/deepbindiff.py -> tensorflow.compat.v1 added
+7. grep -rl "import tensorflow as tf" *| xargs sed -i 's/import tensorflow as tf/import tensorflow.compat.v1 as tf/g'
+8. src/utitily 'tf.compat.v1.disable_eager_execution()' added
+
+
+
