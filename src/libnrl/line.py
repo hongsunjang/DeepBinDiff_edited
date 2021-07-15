@@ -3,7 +3,7 @@ import random
 import math
 import numpy as np
 from sklearn.linear_model import LogisticRegression
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 from .classify import Classifier, read_node_label
 
 

@@ -3,7 +3,7 @@ from .utils import *
 from . import models
 import time
 import scipy.sparse as sp
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 
 class GCN(object):
 

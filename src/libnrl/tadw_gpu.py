@@ -1,6 +1,6 @@
 from __future__ import print_function
 import numpy as np
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 import pandas as pd
 from sklearn.preprocessing import normalize
 
